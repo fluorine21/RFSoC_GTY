@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jan 25 15:52:30 2022
+# Process ID: 21268
+# Current directory: D:/repos/RFSoC_GTY/vivado_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19372 D:\repos\RFSoC_GTY\vivado_project\RFSoC_GTY.xpr
+# Log file: D:/repos/RFSoC_GTY/vivado_project/vivado.log
+# Journal file: D:/repos/RFSoC_GTY/vivado_project\vivado.jou
+# Running On: JAMES-FLOOR4, OS: Windows, CPU Frequency: 2267 MHz, CPU Physical cores: 4, Host memory: 51530 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.xpr
