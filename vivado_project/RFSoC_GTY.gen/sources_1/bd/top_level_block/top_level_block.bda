@@ -21,10 +21,6 @@
   <key id="VT" for="node" attr.name="vert_type" attr.type="string"/>
   <graph id="G" edgedefault="undirected" parse.nodeids="canonical" parse.edgeids="canonical" parse.order="nodesfirst">
     <node id="n0">
-      <data key="VM">top_level_block</data>
-      <data key="VT">BC</data>
-    </node>
-    <node id="n1">
       <data key="BA">0x00A0000000</data>
       <data key="BP">C_BASEADDR</data>
       <data key="HA">0x00A000FFFF</data>
@@ -41,6 +37,10 @@
       <data key="SV">xilinx.com:ip:axi_gpio:2.0</data>
       <data key="TU">register</data>
       <data key="VT">AC</data>
+    </node>
+    <node id="n1">
+      <data key="VM">top_level_block</data>
+      <data key="VT">BC</data>
     </node>
     <node id="n2">
       <data key="BA">0x00A0010000</data>
@@ -70,9 +70,9 @@
       <data key="VM">top_level_block</data>
       <data key="VT">VR</data>
     </node>
-    <edge id="e0" source="n0" target="n4"/>
+    <edge id="e0" source="n1" target="n4"/>
     <edge id="e1" source="n4" target="n3"/>
-    <edge id="e2" source="n1" target="n3">
+    <edge id="e2" source="n0" target="n3">
       <data key="EH">2</data>
     </edge>
     <edge id="e3" source="n2" target="n3">

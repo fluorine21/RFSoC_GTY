@@ -29,7 +29,9 @@
       "gpio_buffer_0": "",
       "gpio_buffer_o_0": "",
       "proc_sys_reset_1": "",
-      "gty_debug_0": ""
+      "gty_debug_0": "",
+      "system_ila_0": "",
+      "system_ila_1": ""
     },
     "interface_ports": {
       "app_leds": {
@@ -1756,6 +1758,85 @@
             "direction": "I"
           }
         }
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "top_level_block_system_ila_0_0",
+        "xci_path": "ip\\top_level_block_system_ila_0_0\\top_level_block_system_ila_0_0.xci",
+        "inst_hier_path": "system_ila_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "17"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE10_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE11_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE12_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE13_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE14_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE15_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE9_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "system_ila_1": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "top_level_block_system_ila_1_0",
+        "xci_path": "ip\\top_level_block_system_ila_1_0\\top_level_block_system_ila_1_0.xci",
+        "inst_hier_path": "system_ila_1",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "2"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1818,104 +1899,257 @@
       "axi_gpio_0_gpio_io_o": {
         "ports": [
           "axi_gpio_0/gpio_io_o",
-          "gpio_buffer_0/gpio_in"
-        ]
+          "gpio_buffer_0/gpio_in",
+          "system_ila_1/probe0"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gpio_buffer_0_gpio_out": {
         "ports": [
           "gpio_buffer_0/gpio_out",
-          "gty_debug_0/gpio_in"
-        ]
+          "gty_debug_0/gpio_in",
+          "system_ila_0/probe16"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gpio_buffer_o_0_gpio_out": {
         "ports": [
           "gpio_buffer_o_0/gpio_out",
-          "axi_gpio_0/gpio2_io_i"
-        ]
+          "axi_gpio_0/gpio2_io_i",
+          "system_ila_1/probe1"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gtpowergood_out_0_1": {
         "ports": [
           "gtpowergood_out_0",
-          "gty_debug_0/gtpowergood_out"
-        ]
+          "gty_debug_0/gtpowergood_out",
+          "system_ila_0/probe0"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gtwiz_reset_rx_cdr_stable_out_0_1": {
         "ports": [
           "gtwiz_reset_rx_cdr_stable_out_0",
-          "gty_debug_0/gtwiz_reset_rx_cdr_stable_out"
-        ]
+          "gty_debug_0/gtwiz_reset_rx_cdr_stable_out",
+          "system_ila_0/probe1"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gtwiz_reset_rx_done_out_0_1": {
         "ports": [
           "gtwiz_reset_rx_done_out_0",
-          "gty_debug_0/gtwiz_reset_rx_done_out"
-        ]
+          "gty_debug_0/gtwiz_reset_rx_done_out",
+          "system_ila_0/probe2"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gtwiz_reset_tx_done_out_0_1": {
         "ports": [
           "gtwiz_reset_tx_done_out_0",
-          "gty_debug_0/gtwiz_reset_tx_done_out"
-        ]
+          "gty_debug_0/gtwiz_reset_tx_done_out",
+          "system_ila_0/probe3"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gpio_out": {
         "ports": [
           "gty_debug_0/gpio_out",
-          "gpio_buffer_o_0/gpio_in"
-        ]
+          "gpio_buffer_o_0/gpio_in",
+          "system_ila_0/probe4"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_reset_all_in": {
         "ports": [
           "gty_debug_0/gtwiz_reset_all_in",
-          "gtwiz_reset_all_in_0"
-        ]
+          "gtwiz_reset_all_in_0",
+          "system_ila_0/probe5"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_reset_clk_freerun_in": {
         "ports": [
           "gty_debug_0/gtwiz_reset_clk_freerun_in",
-          "gtwiz_reset_clk_freerun_in_0"
-        ]
+          "gtwiz_reset_clk_freerun_in_0",
+          "system_ila_0/probe6"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_reset_rx_datapath_in": {
         "ports": [
           "gty_debug_0/gtwiz_reset_rx_datapath_in",
-          "gtwiz_reset_rx_datapath_in_0"
-        ]
+          "gtwiz_reset_rx_datapath_in_0",
+          "system_ila_0/probe7"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_reset_rx_pll_and_datapath_in": {
         "ports": [
           "gty_debug_0/gtwiz_reset_rx_pll_and_datapath_in",
-          "gtwiz_reset_rx_pll_and_datapath_in_0"
-        ]
+          "gtwiz_reset_rx_pll_and_datapath_in_0",
+          "system_ila_0/probe8"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_reset_tx_datapath_in": {
         "ports": [
           "gty_debug_0/gtwiz_reset_tx_datapath_in",
-          "gtwiz_reset_tx_datapath_in_0"
-        ]
+          "gtwiz_reset_tx_datapath_in_0",
+          "system_ila_0/probe9"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_reset_tx_pll_and_datapath_in": {
         "ports": [
           "gty_debug_0/gtwiz_reset_tx_pll_and_datapath_in",
-          "gtwiz_reset_tx_pll_and_datapath_in_0"
-        ]
+          "gtwiz_reset_tx_pll_and_datapath_in_0",
+          "system_ila_0/probe10"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_userclk_rx_active_in": {
         "ports": [
           "gty_debug_0/gtwiz_userclk_rx_active_in",
-          "gtwiz_userclk_rx_active_in_0"
-        ]
+          "gtwiz_userclk_rx_active_in_0",
+          "system_ila_0/probe11"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_userclk_tx_active_in": {
         "ports": [
           "gty_debug_0/gtwiz_userclk_tx_active_in",
-          "gtwiz_userclk_tx_active_in_0"
-        ]
+          "gtwiz_userclk_tx_active_in_0",
+          "system_ila_0/probe12"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "gty_debug_0_gtwiz_userdata_tx_in": {
         "ports": [
           "gty_debug_0/gtwiz_userdata_tx_in",
-          "gtwiz_userdata_tx_in_0"
-        ]
+          "gtwiz_userdata_tx_in_0",
+          "system_ila_0/probe13"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "m_axis_aclk_0_1": {
         "ports": [
@@ -1923,7 +2157,8 @@
           "axis_data_fifo_0/m_axis_aclk",
           "axis_data_fifo_1/s_axis_aclk",
           "proc_sys_reset_1/slowest_sync_clk",
-          "gty_debug_0/clk"
+          "gty_debug_0/clk",
+          "system_ila_0/clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -1949,14 +2184,32 @@
       "rxpmaresetdone_out_0_1": {
         "ports": [
           "rxpmaresetdone_out_0",
-          "gty_debug_0/rxpmaresetdone_out"
-        ]
+          "gty_debug_0/rxpmaresetdone_out",
+          "system_ila_0/probe14"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "txpmaresetdone_out_0_1": {
         "ports": [
           "txpmaresetdone_out_0",
-          "gty_debug_0/txpmaresetdone_out"
-        ]
+          "gty_debug_0/txpmaresetdone_out",
+          "system_ila_0/probe15"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
         "ports": [
@@ -1970,7 +2223,8 @@
           "ps8_0_axi_periph/ACLK",
           "axi_gpio_1/s_axi_aclk",
           "ps8_0_axi_periph/M01_ACLK",
-          "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk"
+          "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
+          "system_ila_1/clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

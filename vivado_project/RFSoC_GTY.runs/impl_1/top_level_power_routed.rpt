@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date             : Wed Jan 26 22:13:26 2022
-| Host             : JAMES-FLOOR4 running 64-bit major release  (build 9200)
+| Date             : Tue Feb  1 17:00:37 2022
+| Host             : NLO running 64-bit major release  (build 9200)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
 | Design           : top_level
 | Device           : xczu29dr-ffvf1760-2-e
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.455        |
+| Total On-Chip Power (W)  | 1.476        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.282        |
+| Dynamic (W)              | 0.303        |
 | Device Static (W)        | 1.173        |
 | Effective TJA (C/W)      | 0.8          |
 | Max Ambient (C)          | 98.9         |
@@ -52,24 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.007 |        3 |       --- |             --- |
-| CLB Logic                |     0.002 |     4217 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1411 |    425280 |            0.33 |
-|   LUT as Shift Register  |    <0.001 |       47 |    213600 |            0.02 |
-|   Register               |    <0.001 |     2156 |    850560 |            0.25 |
-|   LUT as Distributed RAM |    <0.001 |       60 |    213600 |            0.03 |
-|   CARRY8                 |    <0.001 |        8 |     53160 |            0.02 |
+| Clocks                   |     0.019 |        4 |       --- |             --- |
+| CLB Logic                |     0.005 |    12784 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     3575 |    425280 |            0.84 |
+|   LUT as Shift Register  |     0.001 |      456 |    213600 |            0.21 |
+|   LUT as Distributed RAM |    <0.001 |       96 |    213600 |            0.04 |
+|   Register               |    <0.001 |     6750 |    850560 |            0.79 |
+|   CARRY8                 |    <0.001 |       62 |     53160 |            0.12 |
 |   BUFG                   |    <0.001 |        1 |        64 |            1.56 |
-|   Others                 |     0.000 |      160 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |        2 |    425280 |           <0.01 |
-| Signals                  |     0.002 |     3428 |       --- |             --- |
+|   Others                 |     0.000 |      685 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |        7 |    425280 |           <0.01 |
+| Signals                  |     0.006 |     9833 |       --- |             --- |
+| Block RAM                |     0.002 |      6.5 |      1080 |            0.60 |
 | I/O                      |     0.008 |       16 |       408 |            3.92 |
 | GTY                      |     0.263 |        1 |        16 |            6.25 |
 | PS8                      |     1.438 |        1 |       --- |             --- |
 | Static Power             |     1.173 |          |           |                 |
 |   PS Static              |     0.000 |          |           |                 |
 |   PL Static              |     1.173 |          |           |                 |
-| Total                    |     2.894 |          |           |                 |
+| Total                    |     2.914 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,9 +80,9 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint     |       0.850 |     0.290 |       0.014 |      0.276 |       NA    | Unspecified | NA         |
+| Vccint     |       0.850 |     0.314 |       0.038 |      0.276 |       NA    | Unspecified | NA         |
 | Vccint_io  |       0.850 |     0.071 |       0.001 |      0.070 |       NA    | Unspecified | NA         |
-| Vccbram    |       0.850 |     0.030 |       0.000 |      0.030 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.850 |     0.031 |       0.000 |      0.031 |       NA    | Unspecified | NA         |
 | Vccaux     |       1.800 |     0.281 |       0.000 |      0.281 |       NA    | Unspecified | NA         |
 | Vccaux_io  |       1.800 |     0.062 |       0.004 |      0.058 |       NA    | Unspecified | NA         |
 | Vcco33     |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,11 +142,12 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+----------+--------------------------------------------------------------------------------------------+-----------------+
-| Clock    | Domain                                                                                     | Constraint (ns) |
-+----------+--------------------------------------------------------------------------------------------+-----------------+
-| clk_pl_0 | top_level_block_wrapper_inst/top_level_block_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0] |            10.0 |
-+----------+--------------------------------------------------------------------------------------------+-----------------+
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                               | Domain                                                                                     | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------+
+| clk_pl_0                                                                                            | top_level_block_wrapper_inst/top_level_block_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0] |            10.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/in0                          |            50.0 |
++-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -157,15 +159,21 @@ Table of Contents
 +------------------------------------------------------------------------+-----------+
 | Name                                                                   | Power (W) |
 +------------------------------------------------------------------------+-----------+
-| top_level                                                              |     1.721 |
+| top_level                                                              |     1.741 |
+|   dbg_hub                                                              |     0.003 |
+|     inst                                                               |     0.003 |
+|       BSCANID.u_xsdbm_id                                               |     0.003 |
 |   gtwizard_ultrascale_inst                                             |     0.263 |
 |     inst                                                               |     0.263 |
 |       gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst |     0.263 |
-|   top_level_block_wrapper_inst                                         |     1.449 |
-|     top_level_block_i                                                  |     1.449 |
+|   top_level_block_wrapper_inst                                         |     1.467 |
+|     top_level_block_i                                                  |     1.467 |
 |       axi_gpio_0                                                       |     0.001 |
+|       axis_data_fifo_0                                                 |     0.001 |
 |       ps8_0_axi_periph                                                 |     0.008 |
-|       zynq_ultra_ps_e_0                                                |     1.439 |
+|       system_ila_0                                                     |     0.009 |
+|       system_ila_1                                                     |     0.007 |
+|       zynq_ultra_ps_e_0                                                |     1.440 |
 +------------------------------------------------------------------------+-----------+
 
 

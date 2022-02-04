@@ -70,12 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param power.BramSDPPropagationFix 1
-set_param chipscope.maxJobs 1
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.enableLutRouteBelPower 1
-set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu29dr-ffvf1760-2-e
 
@@ -94,7 +88,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/hdl/top_level_block_wrapper.v
+  D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/hdl/top_level_block_wrapper.v
   D:/repos/RFSoC_GTY/verilog_source/rtl/top_level.v
 }
 add_files D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/sources_1/bd/top_level_block/top_level_block.bd
@@ -112,13 +106,25 @@ set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/viv
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_0/top_level_block_proc_sys_reset_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_axis_data_fifo_0_1/top_level_block_axis_data_fifo_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_xbar_0/top_level_block_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1.xdc]
-set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1_ooc.xdc]
 set_property used_in_synthesis false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_auto_ds_0/top_level_block_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_auto_ds_0/top_level_block_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_auto_ds_0/top_level_block_auto_ds_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_auto_pc_0/top_level_block_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_0_0/bd_0/ip/ip_0/bd_2696_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_0_0/bd_0/bd_2696_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_0_0/top_level_block_system_ila_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_1_0/bd_0/ip/ip_0/bd_e6c7_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_1_0/bd_0/bd_e6c7_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_1_0/top_level_block_system_ila_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/top_level_block_ooc.xdc]
 
 read_ip -quiet D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci

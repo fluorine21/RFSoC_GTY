@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Wed Jan 26 22:07:28 2022
-| Host         : JAMES-FLOOR4 running 64-bit major release  (build 9200)
+| Date         : Tue Feb  1 16:54:57 2022
+| Host         : NLO running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
 | Device       : xczu29dr-ffvf1760-2-e
@@ -177,6 +177,8 @@ Table of Contents
 +-------------------------------------+------+
 | top_level_block_zynq_ultra_ps_e_0_0 |    1 |
 | top_level_block_xbar_0              |    1 |
+| top_level_block_system_ila_1_0      |    1 |
+| top_level_block_system_ila_0_0      |    1 |
 | top_level_block_proc_sys_reset_0_1  |    1 |
 | top_level_block_proc_sys_reset_0_0  |    1 |
 | top_level_block_gty_debug_0_1       |    1 |

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu29dr-ffvf1760-2-e" LaunchTime="1643263484" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_level.dcp">
+<GenRun Id="synth_1" LaunchPart="xczu29dr-ffvf1760-2-e" LaunchTime="1643763192" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_level.dcp">
   <File Type="PA-TCL" Name="top_level.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_level_reports.tcl"/>
@@ -101,4 +101,6 @@
   <BlockFileSet Type="BlockSrcs" Name="top_level_block_gpio_buffer_o_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="top_level_block_proc_sys_reset_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="top_level_block_gty_debug_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_level_block_system_ila_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_level_block_system_ila_0_0"/>
 </GenRun>

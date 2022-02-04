@@ -1,0 +1,12 @@
+Nothing to build in platform 'rfsoc_gty_platform'
+
+20:51:45 **** Incremental Build of configuration Debug for project rfsoc_gty_app ****
+make all 
+make: Nothing to be done for 'all'.
+20:51:46 **** Incremental Build of configuration Debug for project rfsoc_gty_app_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 58073 D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/rfsoc_gty_platform.xpfm standalone_domain D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app_system/Debug/system.bif
+sdcard_gen --xpfm D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/rfsoc_gty_platform.xpfm --sys_config rfsoc_gty_platform --bif D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app_system/Debug/system.bif --bitstream D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/_ide/bitstream/top_level.bit --elf D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/Debug/rfsoc_gty_app.elf,psu_cortexa53_0
+creating BOOT.BIN using D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/_ide/bitstream/top_level.bit
+Running C:/Xilinx/Vitis/2021.2/bin/bootgen -arch zynqmp -image D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

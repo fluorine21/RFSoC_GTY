@@ -70,9 +70,9 @@ wire gtwiz_reset_tx_datapath_in;
 wire gtwiz_reset_tx_done_out;
 wire gtwiz_reset_tx_pll_and_datapath_in;
 wire gtwiz_userclk_rx_active_in;
-wire [79:0] gtwiz_userclk_tx_active_in;
+wire gtwiz_userclk_tx_active_in;
 wire [63:0] gtwiz_userdata_rx_out;
-wire gtwiz_userdata_tx_in;
+wire [79:0] gtwiz_userdata_tx_in;
 wire m_axis_aclk;
 wire rxpmaresetdone_out;
 wire txoutclk_out;
@@ -123,7 +123,6 @@ top_level_block_wrapper top_level_block_wrapper_inst
     gtwiz_reset_tx_pll_and_datapath_in,
     gtwiz_userclk_rx_active_in,
     gtwiz_userclk_tx_active_in,
-    //gtwiz_userdata_rx_out,
     gtwiz_userdata_tx_in,
     m_axis_aclk,
     rxpmaresetdone_out,

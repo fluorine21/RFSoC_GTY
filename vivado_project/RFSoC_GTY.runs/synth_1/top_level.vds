@@ -2,20 +2,20 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Wed Jan 26 22:04:54 2022
-# Process ID: 42536
+# Start of session at: Tue Feb  1 16:53:16 2022
+# Process ID: 63812
 # Current directory: D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1
 # Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
 # Log file: D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/top_level.vds
 # Journal file: D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1\vivado.jou
-# Running On: JAMES-FLOOR4, OS: Windows, CPU Frequency: 2267 MHz, CPU Physical cores: 4, Host memory: 51530 MB
+# Running On: NLO, OS: Windows, CPU Frequency: 2295 MHz, CPU Physical cores: 16, Host memory: 549385 MB
 #-----------------------------------------------------------
 source top_level.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1243.297 ; gain = 23.871
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1234.746 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 1243.297 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1234.746 ; gain = 0.000
 Command: read_checkpoint -auto_incremental -incremental D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/utils_1/imports/synth_1/top_level.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/utils_1/imports/synth_1/top_level.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -23,15 +23,15 @@ Command: synth_design -top top_level -part xczu29dr-ffvf1760-2-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu29dr'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu29dr'
-INFO: [Common 17-86] Your Synthesis license expires in 27 day(s)
+INFO: [Common 17-86] Your Synthesis license expires in 28 day(s)
 INFO: [Device 21-403] Loading part xczu29dr-ffvf1760-2-e
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 42224
+INFO: [Synth 8-7075] Helper process launched with PID 43620
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1713.738 ; gain = 263.832
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1751.063 ; gain = 261.527
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_level' [D:/repos/RFSoC_GTY/verilog_source/rtl/top_level.v:23]
 INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:55396]
@@ -41,66 +41,75 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [C:/Xilinx/Vivado/2021.2/
 INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (1#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:55396]
 INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:1259]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (2#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:1259]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_wrapper' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/hdl/top_level_block_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_wrapper' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/hdl/top_level_block_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'top_level_block' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:687]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_axi_gpio_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_axi_gpio_0_0' (3#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_axi_gpio_1_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_axi_gpio_1_0' (4#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_axis_data_fifo_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_axis_data_fifo_0_0' (5#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_axis_data_fifo_0_1' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_axis_data_fifo_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_axis_data_fifo_0_1' (6#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_axis_data_fifo_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_gpio_buffer_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_gpio_buffer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_gpio_buffer_0_0' (7#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_gpio_buffer_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_gpio_buffer_o_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_gpio_buffer_o_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_gpio_buffer_o_0_0' (8#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_gpio_buffer_o_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_gty_debug_0_1' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_gty_debug_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_gty_debug_0_1' (9#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_gty_debug_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_proc_sys_reset_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_proc_sys_reset_0_0' (10#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_axi_gpio_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_axi_gpio_0_0' (3#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_axi_gpio_1_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_axi_gpio_1_0' (4#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_axis_data_fifo_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_axis_data_fifo_0_0' (5#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_axis_data_fifo_0_1' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_axis_data_fifo_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_axis_data_fifo_0_1' (6#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_axis_data_fifo_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_gpio_buffer_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_gpio_buffer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_gpio_buffer_0_0' (7#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_gpio_buffer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_gpio_buffer_o_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_gpio_buffer_o_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_gpio_buffer_o_0_0' (8#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_gpio_buffer_o_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_gty_debug_0_1' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_gty_debug_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_gty_debug_0_1' (9#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_gty_debug_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_proc_sys_reset_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_proc_sys_reset_0_0' (10#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_proc_sys_reset_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'top_level_block_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:955]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'top_level_block_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:955]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'top_level_block_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:955]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'top_level_block_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:955]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'top_level_block_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:955]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_proc_sys_reset_0_1' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_proc_sys_reset_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_proc_sys_reset_0_1' (11#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_proc_sys_reset_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_proc_sys_reset_0_1' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_proc_sys_reset_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_proc_sys_reset_0_1' (11#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_proc_sys_reset_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'top_level_block_proc_sys_reset_0_1' is unconnected for instance 'proc_sys_reset_1' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:962]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'top_level_block_proc_sys_reset_0_1' is unconnected for instance 'proc_sys_reset_1' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:962]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'top_level_block_proc_sys_reset_0_1' is unconnected for instance 'proc_sys_reset_1' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:962]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'top_level_block_proc_sys_reset_0_1' is unconnected for instance 'proc_sys_reset_1' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:962]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_1' of module 'top_level_block_proc_sys_reset_0_1' has 10 connections declared, but only 6 given [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:962]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_ps8_0_axi_periph_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1092]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_ps8_0_axi_periph_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1115]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_ZIT4P0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_ZIT4P0' (12#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:12]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_AF4BNU' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:144]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_AF4BNU' (13#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:144]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_18KSX7G' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:276]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_auto_ds_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_auto_ds_0' (14#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_auto_pc_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_auto_pc_0' (15#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_auto_ds_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_auto_ds_0' (14#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_auto_pc_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_auto_pc_0' (15#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_18KSX7G' (16#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:276]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_xbar_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_xbar_0' (17#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_xbar_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'top_level_block_xbar_0' is unconnected for instance 'xbar' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1591]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'top_level_block_xbar_0' is unconnected for instance 'xbar' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1591]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'top_level_block_xbar_0' has 40 connections declared, but only 38 given [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1591]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_ps8_0_axi_periph_0' (18#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1092]
-INFO: [Synth 8-6157] synthesizing module 'top_level_block_zynq_ultra_ps_e_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_zynq_ultra_ps_e_0_0' (19#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/top_level_block_zynq_ultra_ps_e_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'top_level_block_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1049]
-WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'top_level_block_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1049]
-WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'top_level_block_zynq_ultra_ps_e_0_0' has 42 connections declared, but only 40 given [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1049]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block' (20#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:687]
-INFO: [Synth 8-6155] done synthesizing module 'top_level_block_wrapper' (21#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/hdl/top_level_block_wrapper.v:12]
-WARNING: [Synth 8-689] width (80) of port connection 'gtwiz_userclk_tx_active_in_0' does not match port width (1) of module 'top_level_block_wrapper' [D:/repos/RFSoC_GTY/verilog_source/rtl/top_level.v:125]
-WARNING: [Synth 8-689] width (1) of port connection 'gtwiz_userdata_tx_in_0' does not match port width (80) of module 'top_level_block_wrapper' [D:/repos/RFSoC_GTY/verilog_source/rtl/top_level.v:127]
-INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/gtwizard_ultrascale_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0' (22#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-42536-JAMES-FLOOR4/realtime/gtwizard_ultrascale_0_stub.v:6]
-WARNING: [Synth 8-689] width (80) of port connection 'gtwiz_userclk_tx_active_in' does not match port width (1) of module 'gtwizard_ultrascale_0' [D:/repos/RFSoC_GTY/verilog_source/rtl/top_level.v:135]
-INFO: [Synth 8-6155] done synthesizing module 'top_level' (23#1) [D:/repos/RFSoC_GTY/verilog_source/rtl/top_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_xbar_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_xbar_0' (17#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'top_level_block_xbar_0' is unconnected for instance 'xbar' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1614]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'top_level_block_xbar_0' is unconnected for instance 'xbar' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1614]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'top_level_block_xbar_0' has 40 connections declared, but only 38 given [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1614]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_ps8_0_axi_periph_0' (18#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1115]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1049]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_system_ila_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_system_ila_0_0' (19#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_system_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1068]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_system_ila_1_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_system_ila_1_0' (20#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_zynq_ultra_ps_e_0_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_zynq_ultra_ps_e_0_0' (21#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/top_level_block_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'top_level_block_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1072]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'top_level_block_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1072]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'top_level_block_zynq_ultra_ps_e_0_0' has 42 connections declared, but only 40 given [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1072]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_gpio_0'. This will prevent further optimization [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:853]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_1'. This will prevent further optimization [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1068]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gpio_buffer_0'. This will prevent further optimization [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:917]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:1049]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gty_debug_0'. This will prevent further optimization [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:935]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gpio_buffer_o_0'. This will prevent further optimization [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:926]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block' (22#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/synth/top_level_block.v:687]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_wrapper' (23#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/hdl/top_level_block_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0' [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/gtwizard_ultrascale_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0' (24#1) [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/.Xil/Vivado-63812-NLO/realtime/gtwizard_ultrascale_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (25#1) [D:/repos/RFSoC_GTY/verilog_source/rtl/top_level.v:23]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_18KSX7G is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_18KSX7G is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_AF4BNU is either unconnected or has no load
@@ -118,24 +127,24 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module top_level_block_ps8_0_axi_per
 WARNING: [Synth 8-7129] Port S00_ACLK in module top_level_block_ps8_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module top_level_block_ps8_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1766.918 ; gain = 317.012
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1802.422 ; gain = 312.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1784.832 ; gain = 334.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1820.281 ; gain = 330.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1784.832 ; gain = 334.926
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1820.281 ; gain = 330.746
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1796.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1832.336 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_zynq_ultra_ps_e_0_0/top_level_block_zynq_ultra_ps_e_0_0/top_level_block_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/zynq_ultra_ps_e_0'
-create_clock: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1853.043 ; gain = 24.871
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1889.289 ; gain = 23.844
 Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_zynq_ultra_ps_e_0_0/top_level_block_zynq_ultra_ps_e_0_0/top_level_block_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/zynq_ultra_ps_e_0'
 Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_axi_gpio_0_0/top_level_block_axi_gpio_0_0/top_level_block_axi_gpio_0_0_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/axi_gpio_0'
 Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_axi_gpio_0_0/top_level_block_axi_gpio_0_0/top_level_block_axi_gpio_0_0_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/axi_gpio_0'
@@ -161,6 +170,10 @@ Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/t
 Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/proc_sys_reset_1'
 Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_gty_debug_0_1/top_level_block_gty_debug_0_1/top_level_block_gty_debug_0_1_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/gty_debug_0'
 Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_gty_debug_0_1/top_level_block_gty_debug_0_1/top_level_block_gty_debug_0_1_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/gty_debug_0'
+Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_0_0/top_level_block_system_ila_0_0/top_level_block_system_ila_0_0_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/system_ila_0'
+Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_0_0/top_level_block_system_ila_0_0/top_level_block_system_ila_0_0_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/system_ila_0'
+Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_1_0/top_level_block_system_ila_1_0/top_level_block_system_ila_1_0_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/system_ila_1'
+Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_system_ila_1_0/top_level_block_system_ila_1_0/top_level_block_system_ila_1_0_in_context.xdc] for cell 'top_level_block_wrapper_inst/top_level_block_i/system_ila_1'
 Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc] for cell 'gtwizard_ultrascale_inst'
 Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc] for cell 'gtwizard_ultrascale_inst'
 Parsing XDC File [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/constrs_1/new/des_const.xdc]
@@ -171,15 +184,15 @@ Parsing XDC File [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/dont_
 Finished Parsing XDC File [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1853.043 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1889.289 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1853.043 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1889.289 ; gain = 0.000
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1853.043 ; gain = 403.137
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1889.289 ; gain = 399.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -187,7 +200,7 @@ Start Loading Part and Timing Information
 Loading part: xczu29dr-ffvf1760-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1853.043 ; gain = 403.137
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1889.289 ; gain = 399.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -215,12 +228,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for top_level_block_wrapper_inst/top_
 Applied set_property KEEP_HIERARCHY = SOFT for top_level_block_wrapper_inst/top_level_block_i/gpio_buffer_o_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_level_block_wrapper_inst/top_level_block_i/proc_sys_reset_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_level_block_wrapper_inst/top_level_block_i/gty_debug_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_level_block_wrapper_inst/top_level_block_i/system_ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_level_block_wrapper_inst/top_level_block_i/system_ila_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for gtwizard_ultrascale_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1853.043 ; gain = 403.137
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1889.289 ; gain = 399.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 1853.043 ; gain = 403.137
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1889.289 ; gain = 399.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -249,25 +264,25 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module top_level_block_ps8_0_axi_per
 WARNING: [Synth 8-7129] Port S00_ACLK in module top_level_block_ps8_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module top_level_block_ps8_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1853.043 ; gain = 403.137
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1889.289 ; gain = 399.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 2280.379 ; gain = 830.473
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 2317.750 ; gain = 828.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 2280.602 ; gain = 830.695
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2318.191 ; gain = 828.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 2299.695 ; gain = 849.789
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2337.254 ; gain = 847.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -285,37 +300,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2305.504 ; gain = 855.598
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2344.367 ; gain = 854.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2305.504 ; gain = 855.598
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2344.367 ; gain = 854.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2305.504 ; gain = 855.598
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2344.367 ; gain = 854.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2305.504 ; gain = 855.598
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2344.367 ; gain = 854.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2305.504 ; gain = 855.598
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2344.367 ; gain = 854.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2305.504 ; gain = 855.598
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2344.367 ; gain = 854.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -338,7 +353,9 @@ Report BlackBoxes:
 |11    |top_level_block_gty_debug_0_1       |         1|
 |12    |top_level_block_proc_sys_reset_0_0  |         1|
 |13    |top_level_block_proc_sys_reset_0_1  |         1|
-|14    |top_level_block_zynq_ultra_ps_e_0_0 |         1|
+|14    |top_level_block_system_ila_0_0      |         1|
+|15    |top_level_block_system_ila_1_0      |         1|
+|16    |top_level_block_zynq_ultra_ps_e_0_0 |         1|
 +------+------------------------------------+----------+
 
 Report Cell Usage: 
@@ -355,35 +372,37 @@ Report Cell Usage:
 |9     |top_level_block_gpio_buffer_o_0   |     1|
 |10    |top_level_block_gty_debug_0       |     1|
 |11    |top_level_block_proc_sys_reset_0  |     2|
-|13    |top_level_block_xbar              |     1|
-|14    |top_level_block_zynq_ultra_ps_e_0 |     1|
-|15    |BUFG_GT                           |     1|
-|16    |IBUFDS_GTE4                       |     1|
-|17    |IBUF                              |     8|
-|18    |OBUF                              |     8|
+|13    |top_level_block_system_ila_0      |     1|
+|14    |top_level_block_system_ila_1      |     1|
+|15    |top_level_block_xbar              |     1|
+|16    |top_level_block_zynq_ultra_ps_e_0 |     1|
+|17    |BUFG_GT                           |     1|
+|18    |IBUFDS_GTE4                       |     1|
+|19    |IBUF                              |     8|
+|20    |OBUF                              |     8|
 +------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2305.504 ; gain = 855.598
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2344.367 ; gain = 854.832
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 2305.504 ; gain = 787.387
-Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2305.504 ; gain = 855.598
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 2344.367 ; gain = 785.824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2344.367 ; gain = 854.832
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 2313.516 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2352.402 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2363.836 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2401.570 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IBUF => IBUF (IBUFCTRL, INBUF): 8 instances
 
-Synth Design complete, checksum: a140d0ee
+Synth Design complete, checksum: 333ac3a
 INFO: [Common 17-83] Releasing license: Synthesis
-70 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+80 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:51 . Memory (MB): peak = 2363.836 ; gain = 1120.539
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:11 . Memory (MB): peak = 2401.570 ; gain = 1166.824
 INFO: [Common 17-1381] The checkpoint 'D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/synth_1/top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 26 22:07:28 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  1 16:54:57 2022...

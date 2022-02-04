@@ -1,8 +1,8 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-//Date        : Wed Jan 26 20:48:35 2022
-//Host        : JAMES-FLOOR4 running 64-bit major release  (build 9200)
+//Date        : Thu Jan 27 09:36:28 2022
+//Host        : NLO running 64-bit major release  (build 9200)
 //Command     : generate_target top_level_block.bd
 //Design      : top_level_block
 //Purpose     : IP block netlist
@@ -683,7 +683,7 @@ module s00_couplers_imp_18KSX7G
         .s_axi_wvalid(auto_ds_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "top_level_block,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_level_block,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=2,da_zynq_ultra_ps_e_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "top_level_block.hwdef" *) 
+(* CORE_GENERATION_INFO = "top_level_block,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=top_level_block,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=19,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=2,da_zynq_ultra_ps_e_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "top_level_block.hwdef" *) 
 module top_level_block
    (app_leds_tri_o,
     gtpowergood_out_0,
@@ -722,7 +722,7 @@ module top_level_block
   input txpmaresetdone_out_0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 user_switches TRI_I" *) input [7:0]user_switches_tri_i;
 
-  wire [31:0]axi_gpio_0_gpio_io_o;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]axi_gpio_0_gpio_io_o;
   wire [7:0]axi_gpio_1_GPIO2_TRI_I;
   wire [7:0]axi_gpio_1_GPIO_TRI_O;
   wire [31:0]axis_data_fifo_0_M_AXIS_TDATA;
@@ -731,28 +731,28 @@ module top_level_block
   wire [31:0]axis_data_fifo_1_M_AXIS_TDATA;
   wire axis_data_fifo_1_M_AXIS_TREADY;
   wire axis_data_fifo_1_M_AXIS_TVALID;
-  wire [31:0]gpio_buffer_0_gpio_out;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]gpio_buffer_0_gpio_out;
   wire [31:0]gpio_buffer_0_m_axis_TDATA;
   wire gpio_buffer_0_m_axis_TREADY;
   wire gpio_buffer_0_m_axis_TVALID;
-  wire [31:0]gpio_buffer_o_0_gpio_out;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]gpio_buffer_o_0_gpio_out;
   wire [31:0]gpio_buffer_o_0_m_axis_TDATA;
   wire gpio_buffer_o_0_m_axis_TREADY;
   wire gpio_buffer_o_0_m_axis_TVALID;
-  wire gtpowergood_out_0_1;
-  wire gtwiz_reset_rx_cdr_stable_out_0_1;
-  wire gtwiz_reset_rx_done_out_0_1;
-  wire gtwiz_reset_tx_done_out_0_1;
-  wire [31:0]gty_debug_0_gpio_out;
-  wire gty_debug_0_gtwiz_reset_all_in;
-  wire gty_debug_0_gtwiz_reset_clk_freerun_in;
-  wire gty_debug_0_gtwiz_reset_rx_datapath_in;
-  wire gty_debug_0_gtwiz_reset_rx_pll_and_datapath_in;
-  wire gty_debug_0_gtwiz_reset_tx_datapath_in;
-  wire gty_debug_0_gtwiz_reset_tx_pll_and_datapath_in;
-  wire gty_debug_0_gtwiz_userclk_rx_active_in;
-  wire gty_debug_0_gtwiz_userclk_tx_active_in;
-  wire [79:0]gty_debug_0_gtwiz_userdata_tx_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gtpowergood_out_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gtwiz_reset_rx_cdr_stable_out_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gtwiz_reset_rx_done_out_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gtwiz_reset_tx_done_out_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]gty_debug_0_gpio_out;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gty_debug_0_gtwiz_reset_all_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gty_debug_0_gtwiz_reset_clk_freerun_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gty_debug_0_gtwiz_reset_rx_datapath_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gty_debug_0_gtwiz_reset_rx_pll_and_datapath_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gty_debug_0_gtwiz_reset_tx_datapath_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gty_debug_0_gtwiz_reset_tx_pll_and_datapath_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gty_debug_0_gtwiz_userclk_rx_active_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire gty_debug_0_gtwiz_userclk_tx_active_in;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [79:0]gty_debug_0_gtwiz_userdata_tx_in;
   wire m_axis_aclk_0_1;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire [0:0]proc_sys_reset_1_peripheral_aresetn;
@@ -790,8 +790,8 @@ module top_level_block
   wire ps8_0_axi_periph_M01_AXI_WREADY;
   wire [3:0]ps8_0_axi_periph_M01_AXI_WSTRB;
   wire [0:0]ps8_0_axi_periph_M01_AXI_WVALID;
-  wire rxpmaresetdone_out_0_1;
-  wire txpmaresetdone_out_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire rxpmaresetdone_out_0_1;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire txpmaresetdone_out_0_1;
   wire [39:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARADDR;
   wire [1:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARBURST;
   wire [3:0]zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARCACHE;
@@ -1046,6 +1046,29 @@ module top_level_block
         .S00_AXI_wready(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WREADY),
         .S00_AXI_wstrb(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WSTRB),
         .S00_AXI_wvalid(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WVALID));
+  top_level_block_system_ila_0_0 system_ila_0
+       (.clk(m_axis_aclk_0_1),
+        .probe0(gtpowergood_out_0_1),
+        .probe1(gtwiz_reset_rx_cdr_stable_out_0_1),
+        .probe10(gty_debug_0_gtwiz_reset_tx_pll_and_datapath_in),
+        .probe11(gty_debug_0_gtwiz_userclk_rx_active_in),
+        .probe12(gty_debug_0_gtwiz_userclk_tx_active_in),
+        .probe13(gty_debug_0_gtwiz_userdata_tx_in),
+        .probe14(rxpmaresetdone_out_0_1),
+        .probe15(txpmaresetdone_out_0_1),
+        .probe16(gpio_buffer_0_gpio_out),
+        .probe2(gtwiz_reset_rx_done_out_0_1),
+        .probe3(gtwiz_reset_tx_done_out_0_1),
+        .probe4(gty_debug_0_gpio_out),
+        .probe5(gty_debug_0_gtwiz_reset_all_in),
+        .probe6(gty_debug_0_gtwiz_reset_clk_freerun_in),
+        .probe7(gty_debug_0_gtwiz_reset_rx_datapath_in),
+        .probe8(gty_debug_0_gtwiz_reset_rx_pll_and_datapath_in),
+        .probe9(gty_debug_0_gtwiz_reset_tx_datapath_in));
+  top_level_block_system_ila_1_0 system_ila_1
+       (.clk(zynq_ultra_ps_e_0_pl_clk0),
+        .probe0(axi_gpio_0_gpio_io_o),
+        .probe1(gpio_buffer_o_0_gpio_out));
   top_level_block_zynq_ultra_ps_e_0_0 zynq_ultra_ps_e_0
        (.maxigp0_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARADDR),
         .maxigp0_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_ARBURST),
