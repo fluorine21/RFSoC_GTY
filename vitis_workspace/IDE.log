@@ -1,0 +1,222 @@
+21:33:23 INFO  : Platform repository initialization has completed.
+21:33:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\repos\RFSoC_GTY\vitis_workspace\temp_xsdb_launch_script.tcl
+21:33:23 INFO  : Registering command handlers for Vitis TCF services
+21:33:27 INFO  : XSCT server has started successfully.
+21:33:27 INFO  : Successfully done setting XSCT server connection channel  
+21:33:29 INFO  : plnx-install-location is set to ''
+21:33:29 INFO  : Successfully done setting workspace for the tool. 
+21:33:29 INFO  : Successfully done query RDI_DATADIR 
+21:34:56 INFO  : Result from executing command 'getProjects': rfsoc_gty_platform
+21:34:56 INFO  : Result from executing command 'getPlatforms': 
+21:36:49 INFO  : Result from executing command 'getProjects': rfsoc_gty_platform
+21:36:49 INFO  : Result from executing command 'getPlatforms': rfsoc_gty_platform|D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/rfsoc_gty_platform.xpfm
+20:43:22 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:43:52 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:44:05 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:44:50 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:46:29 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:47:09 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:47:33 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:48:42 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:50:10 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:50:49 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:51:37 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+20:51:45 INFO  : Checking for BSP changes to sync application flags for project 'rfsoc_gty_app'...
+15:29:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\repos\RFSoC_GTY\vitis_workspace\temp_xsdb_launch_script.tcl
+15:29:12 INFO  : XSCT server has started successfully.
+15:29:12 INFO  : Platform repository initialization has completed.
+15:29:12 INFO  : plnx-install-location is set to ''
+15:29:12 INFO  : Successfully done setting XSCT server connection channel  
+15:29:12 INFO  : Successfully done query RDI_DATADIR 
+15:29:12 INFO  : Successfully done setting workspace for the tool. 
+15:29:12 INFO  : Registering command handlers for Vitis TCF services
+15:34:47 ERROR : (XRT Server)C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Target Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in inter
+15:34:47 ERROR : (XRT Server)active mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      el
+15:34:47 ERROR : (XRT Server)f          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdow
+15:34:47 ERROR : (XRT Server)n of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is 
+15:34:47 ERROR : (XRT Server)tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         star
+15:34:47 ERROR : (XRT Server)t GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seco
+15:34:47 ERROR : (XRT Server)nds> exit if there are no connections fo
+15:34:47 ERROR : (XRT Server)r the specified time
+
+15:35:46 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+15:35:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:50 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308AB05EE' is selected.
+15:35:50 INFO  : 'jtag frequency' command is executed.
+15:35:50 INFO  : Sourcing of 'C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+15:35:50 INFO  : Context for 'APU' is selected.
+15:35:51 INFO  : System reset is completed.
+15:35:54 INFO  : 'after 3000' command is executed.
+15:35:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308AB05EE" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2NC-210308AB05EE-147e2093-0"}' command is executed.
+15:36:14 INFO  : Device configured successfully with "D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/_ide/bitstream/top_level.bit"
+15:36:14 INFO  : Context for 'APU' is selected.
+15:36:15 INFO  : Hardware design and registers information is loaded from 'D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/hw/top_level.xsa'.
+15:36:15 INFO  : 'configparams force-mem-access 1' command is executed.
+15:36:15 INFO  : Context for 'APU' is selected.
+15:36:15 INFO  : Boot mode is read from the target.
+15:36:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:36:16 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:36:16 INFO  : The application 'D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/sw/rfsoc_gty_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:36:17 INFO  : 'set bp_36_16_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+15:36:18 INFO  : 'con -block -timeout 60' command is executed.
+15:36:18 INFO  : 'bpremove $bp_36_16_fsbl_bp' command is executed.
+15:36:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:36:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:36:19 INFO  : The application 'D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/Debug/rfsoc_gty_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:36:19 INFO  : 'configparams force-mem-access 0' command is executed.
+15:36:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308AB05EE" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2NC-210308AB05EE-147e2093-0"}
+fpga -file D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/_ide/bitstream/top_level.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/hw/top_level.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/sw/rfsoc_gty_platform/boot/fsbl.elf
+set bp_36_16_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_36_16_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/Debug/rfsoc_gty_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:36:20 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:36:20 INFO  : 'con' command is executed.
+15:36:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+15:36:20 INFO  : Launch script is exported to file 'D:\repos\RFSoC_GTY\vitis_workspace\rfsoc_gty_app_system\_ide\scripts\systemdebugger_rfsoc_gty_app_system_standalone.tcl'
+16:08:26 INFO  : Disconnected from the channel tcfchan#1.
+16:16:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\repos\RFSoC_GTY\vitis_workspace\temp_xsdb_launch_script.tcl
+16:17:01 INFO  : XSCT server has started successfully.
+16:17:01 INFO  : plnx-install-location is set to ''
+16:17:01 INFO  : Successfully done setting XSCT server connection channel  
+16:17:01 INFO  : Successfully done setting workspace for the tool. 
+16:17:01 INFO  : Platform repository initialization has completed.
+16:17:01 INFO  : Successfully done query RDI_DATADIR 
+16:17:02 INFO  : Registering command handlers for Vitis TCF services
+16:19:50 ERROR : (XRT Server)c:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xrt_server.exe: error: illegal option '-'
+Usage: agent [OPTION]...
+Start Targe
+16:19:50 ERROR : (XRT Server)t Communication Framework agent.
+  -d               run in daemon mode (output is sent to system logger)
+  -i               run in interactive mode
+  -L<file>         enable logging, use -L- to send log to stderr
+  -l<level>        set log level, the level is comma separated list of:
+      alloc        memory allocation and deallocation (0x1)
+      eventcore    main event queue (0x2)
+      waitpid      waitpid() events (0x4)
+      events       low-level debugger events (0x8)
+      protocol     communication protocol (0x20)
+      context      debug context actions (0x40)
+      children     debug context children (0x10)
+      discovery    discovery (0x80)
+      asyncreq     async I/O (0x100)
+      proxy        proxy state (0x200)
+      tcflog       proxy traffic (0x400)
+      elf          ELF reader (0x800)
+      stack        stack trace service (0x2000)
+      plugin       plugins (0x4000)
+      shutdown     shutdown of subsystems (0x8000)
+      disasm       disassembly service (0x10000)
+  -s<url>          set agent listening port and protocol, default is tcp::0
+  -S               print server properties in Json format to stdout
+  -g<port>         start GDB Remote Serial Protocol server at the specified TCP port
+  -I<idle-seconds> exit if there are no connections for the specified time
+
+16:20:49 ERROR : Timed out. 60 seconds have elapsed while waiting for the XRT server to launch.
+16:20:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:50 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308AB05EE' is selected.
+16:20:50 INFO  : 'jtag frequency' command is executed.
+16:20:50 INFO  : Sourcing of 'C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+16:20:50 INFO  : Context for 'APU' is selected.
+16:20:51 INFO  : System reset is completed.
+16:20:54 INFO  : 'after 3000' command is executed.
+16:20:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308AB05EE" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2NC-210308AB05EE-147e2093-0"}' command is executed.
+16:21:14 INFO  : Device configured successfully with "D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/_ide/bitstream/top_level.bit"
+16:21:14 INFO  : Context for 'APU' is selected.
+16:21:14 INFO  : Hardware design and registers information is loaded from 'D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/hw/top_level.xsa'.
+16:21:14 INFO  : 'configparams force-mem-access 1' command is executed.
+16:21:14 INFO  : Context for 'APU' is selected.
+16:21:14 INFO  : Boot mode is read from the target.
+16:21:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:21:15 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+16:21:16 INFO  : The application 'D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/sw/rfsoc_gty_platform/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:21:16 INFO  : 'set bp_21_16_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+16:21:17 INFO  : 'con -block -timeout 60' command is executed.
+16:21:17 INFO  : 'bpremove $bp_21_16_fsbl_bp' command is executed.
+16:21:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:21:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+16:21:18 INFO  : The application 'D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/Debug/rfsoc_gty_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+16:21:18 INFO  : 'configparams force-mem-access 0' command is executed.
+16:21:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2021.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308AB05EE" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2NC-210308AB05EE-147e2093-0"}
+fpga -file D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/_ide/bitstream/top_level.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/hw/top_level.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_platform/export/rfsoc_gty_platform/sw/rfsoc_gty_platform/boot/fsbl.elf
+set bp_21_16_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_21_16_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/repos/RFSoC_GTY/vitis_workspace/rfsoc_gty_app/Debug/rfsoc_gty_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:21:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+16:21:19 INFO  : 'con' command is executed.
+16:21:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+16:21:19 INFO  : Launch script is exported to file 'D:\repos\RFSoC_GTY\vitis_workspace\rfsoc_gty_app_system\_ide\scripts\systemdebugger_rfsoc_gty_app_system_standalone.tcl'
+09:27:07 INFO  : Disconnected from the channel tcfchan#1.

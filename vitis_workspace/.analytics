@@ -19,3 +19,9 @@ timestamp=[2022-02-03 20:50:51], mode=BUILD, duration=0:00:02.029, duration_ms=2
 timestamp=[2022-02-03 20:51:39], mode=BUILD, duration=0:00:01.781, duration_ms=1781, data={name=rfsoc_gty_app, configuration=Debug, clean_build=false}
 timestamp=[2022-02-03 20:51:45], mode=BUILD, duration=0:00:00.262, duration_ms=262, data={name=rfsoc_gty_app, configuration=Debug, clean_build=false}
 timestamp=[2022-02-03 20:52:03], mode=BUILD, duration=0:00:17.043, duration_ms=17043, data={name=rfsoc_gty_app_system, configuration=Debug, clean_build=false}
+timestamp=[2022-02-09 15:29:11], mode=WORKBENCH_START, duration=0:00:07.006, duration_ms=7006, data={}
+timestamp=[2022-02-09 15:29:11], mode=WORKBENCH_UI_INIT, duration=0:00:00.660, duration_ms=660, data={editors_count=9, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,rfsoc_gty_app,rfsoc_gty_app_system,rfsoc_gty_platform}
+timestamp=[2022-02-09 15:29:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.156, duration_ms=156, data={}
+timestamp=[2022-02-09 16:17:00], mode=WORKBENCH_START, duration=0:00:07.851, duration_ms=7851, data={}
+timestamp=[2022-02-09 16:17:01], mode=WORKBENCH_UI_INIT, duration=0:00:00.791, duration_ms=791, data={editors_count=9, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,rfsoc_gty_app,rfsoc_gty_app_system,rfsoc_gty_platform}
+timestamp=[2022-02-09 16:17:01], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.039, duration_ms=39, data={}

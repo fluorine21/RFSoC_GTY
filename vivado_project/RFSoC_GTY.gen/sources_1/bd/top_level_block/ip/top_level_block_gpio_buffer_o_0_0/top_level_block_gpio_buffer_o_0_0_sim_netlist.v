@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
 // Date        : Wed Jan 26 18:04:51 2022
 // Host        : JAMES-FLOOR4 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_gpio_buffer_o_0_0/top_level_block_gpio_buffer_o_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top top_level_block_gpio_buffer_o_0_0 -prefix
+//               top_level_block_gpio_buffer_o_0_0_ top_level_block_gpio_buffer_o_0_0_sim_netlist.v
 // Design      : top_level_block_gpio_buffer_o_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

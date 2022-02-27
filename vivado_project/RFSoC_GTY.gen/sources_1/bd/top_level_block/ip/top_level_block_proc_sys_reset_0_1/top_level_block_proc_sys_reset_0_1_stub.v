@@ -1,10 +1,10 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-// Date        : Wed Jan 26 18:05:42 2022
+// Date        : Wed Jan 26 18:05:41 2022
 // Host        : JAMES-FLOOR4 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top top_level_block_proc_sys_reset_0_1 -prefix
+//               top_level_block_proc_sys_reset_0_1_ top_level_block_proc_sys_reset_0_1_stub.v
 // Design      : top_level_block_proc_sys_reset_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu29dr-ffvf1760-2-e

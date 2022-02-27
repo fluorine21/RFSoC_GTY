@@ -1,0 +1,166 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Feb 13 13:20:11 2022
+| Host         : NLO running 64-bit major release  (build 9200)
+| Command      : report_methodology -file gtwizard_ultrascale_0_example_top_methodology_drc_routed.rpt -pb gtwizard_ultrascale_0_example_top_methodology_drc_routed.pb -rpx gtwizard_ultrascale_0_example_top_methodology_drc_routed.rpx
+| Design       : gtwizard_ultrascale_0_example_top
+| Device       : xczu29dr-ffvf1760-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 16
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 12         |
+| TIMING-18 | Warning  | Missing input or output delay | 4          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell example_stimulus_inst0/example_stimulus_reset_synchronizer_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) example_stimulus_inst0/example_stimulus_reset_synchronizer_inst/rst_in_meta_reg/PRE,
+example_stimulus_inst0/example_stimulus_reset_synchronizer_inst/rst_in_out_reg/PRE,
+example_stimulus_inst0/example_stimulus_reset_synchronizer_inst/rst_in_sync1_reg/PRE,
+example_stimulus_inst0/example_stimulus_reset_synchronizer_inst/rst_in_sync2_reg/PRE
+example_stimulus_inst0/example_stimulus_reset_synchronizer_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell example_wrapper_inst/gtwiz_userclk_rx_inst/example_checking_reset_synchronizer_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) example_checking_inst0/example_checking_reset_synchronizer_inst/rst_in_meta_reg/PRE,
+example_checking_inst0/example_checking_reset_synchronizer_inst/rst_in_out_reg/PRE,
+example_checking_inst0/example_checking_reset_synchronizer_inst/rst_in_sync1_reg/PRE,
+example_checking_inst0/example_checking_reset_synchronizer_inst/rst_in_sync2_reg/PRE
+example_checking_inst0/example_checking_reset_synchronizer_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_out_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync1_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync2_reg/PRE
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_meta_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_out_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync1_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync2_reg/PRE
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_meta_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_meta_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_out_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_sync1_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_sync2_reg/PRE
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell example_wrapper_inst/gtwizard_ultrascale_0_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) example_init_inst/reset_synchronizer_reset_all_inst/rst_in_meta_reg/PRE,
+example_init_inst/reset_synchronizer_reset_all_inst/rst_in_out_reg/PRE,
+example_init_inst/reset_synchronizer_reset_all_inst/rst_in_sync1_reg/PRE,
+example_init_inst/reset_synchronizer_reset_all_inst/rst_in_sync2_reg/PRE,
+example_init_inst/reset_synchronizer_reset_all_inst/rst_in_sync3_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_all_inst/rst_in_meta_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_all_inst/rst_in_out_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_all_inst/rst_in_sync1_reg/PRE,
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_all_inst/rst_in_sync2_reg/PRE
+example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gtye4_top.gtwizard_ultrascale_0_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_all_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on hb_gtwiz_reset_all_in relative to clock(s) clk_freerun, clk_mgtrefclk0_x0y2_p
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on link_down_latched_reset_in relative to clock(s) clk_freerun
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on link_down_latched_out relative to clock(s) clk_freerun
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on link_status_out relative to clock(s) clk_freerun
+Related violations: <none>
+
+

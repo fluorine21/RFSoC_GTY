@@ -44,7 +44,7 @@ module top_level(
 
     );
 
-
+//Differential to single ended clock buffer
 wire gtrefclk00_in;
 IBUFDS_GTE4 #(
 .REFCLK_EN_TX_PATH  (1'b0),
@@ -59,107 +59,58 @@ IBUFDS_GTE4 #(
 );
 
 //Block diagram connections
-wire gtpowergood_out;
-wire gtwiz_reset_all_in;
-wire gtwiz_reset_clk_freerun_in;
-wire gtwiz_reset_rx_cdr_stable_out;
-wire gtwiz_reset_rx_datapath_in;
-wire gtwiz_reset_rx_done_out;
-wire gtwiz_reset_rx_pll_and_datapath_in;
-wire gtwiz_reset_tx_datapath_in;
-wire gtwiz_reset_tx_done_out;
-wire gtwiz_reset_tx_pll_and_datapath_in;
-wire gtwiz_userclk_rx_active_in;
-wire gtwiz_userclk_tx_active_in;
-wire [63:0] gtwiz_userdata_rx_out;
-wire [79:0] gtwiz_userdata_tx_in;
-wire m_axis_aclk;
-wire rxpmaresetdone_out;
-wire txoutclk_out;
-wire txpmaresetdone_out;
-
-
-//GTY extra connections
-wire rxusrclk_in = txoutclk_out, rxusrclk2_in = txoutclk_out;
-wire txusrclk_in = txoutclk_out, txusrclk2_in = txoutclk_out;
-
-
-
-
-//GTY ref clock to PL connection
-assign m_axis_aclk = txoutclk_out;
-
-
-wire txoutclk_out_int;
-
-BUFG_GT BUFG_GT_inst (
-.O(txoutclk_out),
-// 1-bit output: Buffer
-.CE(1'b1),
-// 1-bit input: Buffer enable
-.CEMASK(1'b0),
-// 1-bit input: CE Mask
-.CLR(1'b0),
-// 1-bit input: Asynchronous clear
-.CLRMASK(1'b0), // 1-bit input: CLR Mask
-.DIV(3'b0),
-// 3-bit input: Dymanic divide Value
-.I(txoutclk_out_int)
-// 1-bit input: Buffer
-);
-
-
+wire [79:0] gtwiz_userdata_tx;
+wire [31:0] gty_fast_flags_in;
+wire [31:0] gty_fast_flags_out;
+wire [31:0] gty_slow_flags_in;
+wire [31:0] gty_slow_flags_out;
+wire m_axis_aclk_0;
+wire pl_clk0;
+	
 top_level_block_wrapper top_level_block_wrapper_inst
    (app_leds_tri_o,
-    gtpowergood_out,
-    gtwiz_reset_all_in,
-    gtwiz_reset_clk_freerun_in,
-    gtwiz_reset_rx_cdr_stable_out,
-    gtwiz_reset_rx_datapath_in,
-    gtwiz_reset_rx_done_out,
-    gtwiz_reset_rx_pll_and_datapath_in,
-    gtwiz_reset_tx_datapath_in,
-    gtwiz_reset_tx_done_out,
-    gtwiz_reset_tx_pll_and_datapath_in,
-    gtwiz_userclk_rx_active_in,
-    gtwiz_userclk_tx_active_in,
-    gtwiz_userdata_tx_in,
-    m_axis_aclk,
-    rxpmaresetdone_out,
-    txpmaresetdone_out,
+    gtwiz_userdata_tx,
+    gty_fast_flags_in,
+    gty_fast_flags_out,
+    gty_slow_flags_in,
+    gty_slow_flags_out,
+    m_axis_aclk_0,
+    pl_clk0,
     user_switches_tri_i);
 
 
-gtwizard_ultrascale_0 gtwizard_ultrascale_inst(
-  gtwiz_userclk_tx_active_in,
-  gtwiz_userclk_rx_active_in,
-  gtwiz_reset_clk_freerun_in,
-  gtwiz_reset_all_in,
-  gtwiz_reset_tx_pll_and_datapath_in,
-  gtwiz_reset_tx_datapath_in,
-  gtwiz_reset_rx_pll_and_datapath_in,
-  gtwiz_reset_rx_datapath_in,
-  gtwiz_reset_rx_cdr_stable_out,
-  gtwiz_reset_tx_done_out,
-  gtwiz_reset_rx_done_out,
-  gtwiz_userdata_tx_in,
-  gtwiz_userdata_rx_out,//Ignored
-  gtrefclk00_in, //Comes in from clock buffer
-  qpll0outclk_out,
-  qpll0outrefclk_out,
-  gtyrxn_in, //External connecton
-  gtyrxp_in, //External connection
-  rxusrclk_in, //Sourced from this module
-  rxusrclk2_in, //Sourced from this module
-  txusrclk_in, //Sourced from this module
-  txusrclk2_in, //Sourced from thos modle
-  gtpowergood_out,
-  gtytxn_out, //External connection
-  gtytxp_out, //External connection
-  rxoutclk_out, //Will be ignored
-  rxpmaresetdone_out,
-  txoutclk_out_int, //Main fabric clock (into buffer)
-  txpmaresetdone_out
+gtwizard_ultrascale_0_example_wrapper gtwizard_ultrascale_0_example_wrapper_inst(
+ .gtyrxn_in(gtyrxn_in),
+ .gtyrxp_in(gtyrxp_in),
+ .gtytxn_out(gtytxn_out),
+ .gtytxp_out(gtytxp_out),
+ .gtwiz_userclk_tx_reset_in(gty_slow_flags_out[0]),//User signal to reset the clocking resources within the helper block
+ .gtwiz_userclk_tx_srcclk_out(),//Don't use
+ .gtwiz_userclk_tx_usrclk_out(m_axis_aclk),//Use as 250MHz clock to block diagram
+ .gtwiz_userclk_tx_usrclk2_out(),//Don't use
+ .gtwiz_userclk_tx_active_out(gty_slow_flags_in[0]),//Active-High indication that the clocking resources within the helper block are not held in reset
+ .gtwiz_userclk_rx_reset_in(gty_slow_flags_out[1]),//User signal to reset the clocking resources within the helper block
+ .gtwiz_userclk_rx_srcclk_out(),//Don't use
+ .gtwiz_userclk_rx_usrclk_out(),//Don't use
+ .gtwiz_userclk_rx_usrclk2_out(),//Don't use
+ .gtwiz_userclk_rx_active_out(gty_slow_flags_in[1]),//Active-High indication that the clocking resources within the helper block are not held in reset
+ .gtwiz_reset_clk_freerun_in(pl_clk0),//Free-running clock used to reset transceiver primitives.(connect to 100MHz clk)
+ .gtwiz_reset_all_in(gty_slow_flags_out[2]),//User signal to reset the phase-locked loops (PLLs) and active data directions of transceiver primitives. The falling edge of an active-High ,asynchronous pulse of at least one gtwiz_reset_clk_freerun_in period in duration initializes the process.
+ .gtwiz_reset_tx_pll_and_datapath_in(gty_slow_flags_out[3]),//Connect to slow output
+ .gtwiz_reset_tx_datapath_in(gty_slow_flags_out[4]),//Connect to slow output
+ .gtwiz_reset_rx_pll_and_datapath_in(gty_slow_flags_out[5]),//Connect to slow output
+ .gtwiz_reset_rx_datapath_in(gty_slow_flags_out[6]),//Connect to slow output
+ .gtwiz_reset_rx_cdr_stable_out(gty_slow_flags_in[2]),//Connect to slow input
+ .gtwiz_reset_tx_done_out(gty_slow_flags_in[3]),//Connect to slow inout
+ .gtwiz_reset_rx_done_out(gty_slow_flags_in[4]),//Connect to slow input
+ .gtwiz_userdata_tx_in(gty_userdata_tx),//Input user data (fast clock)
+ .gtwiz_userdata_rx_out(),//Don't use
+ .gtrefclk00_in(gtrefclk00_in),//Converted diff clock from helper block up above
+ .qpll0outclk_out(),//Don't use
+ .qpll0outrefclk_out(),//Dont use
+ .gtpowergood_out(gty_slow_flags_in[5]),//Try fast clock first and go to slow if it doesnt meet timing for these
+ .rxpmaresetdone_out(gty_slow_flags_in[6]),
+ .txpmaresetdone_out(gty_slow_flags_in[7])
 );
 
 

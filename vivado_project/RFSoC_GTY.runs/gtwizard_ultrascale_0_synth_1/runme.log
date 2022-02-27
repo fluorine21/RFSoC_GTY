@@ -10,17 +10,17 @@
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source gtwizard_ultrascale_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1219.520 ; gain = 0.000
 Command: synth_design -top gtwizard_ultrascale_0 -part xczu29dr-ffvf1760-2-e -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu29dr'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu29dr'
+INFO: [Common 17-86] Your Synthesis license expires in 20 day(s)
 INFO: [Device 21-403] Loading part xczu29dr-ffvf1760-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17660
+INFO: [Synth 8-7075] Helper process launched with PID 27304
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1688.660 ; gain = 263.688
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1689.066 ; gain = 264.828
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.v:62]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_gtwizard_top' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_top.v:175]
@@ -158,24 +158,24 @@ WARNING: [Synth 8-7129] Port gtwiz_buffbypass_tx_reset_in[0] in module gtwizard_
 WARNING: [Synth 8-7129] Port gtwiz_buffbypass_tx_start_user_in[0] in module gtwizard_ultrascale_0_gtwizard_gtye4 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1757.727 ; gain = 332.754
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1761.188 ; gain = 336.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1775.641 ; gain = 350.668
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1779.059 ; gain = 354.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1775.641 ; gain = 350.668
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1779.059 ; gain = 354.820
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.162 . Memory (MB): peak = 1787.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1791.109 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1899.641 ; gain = 3.004
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1908.383 ; gain = 4.980
 Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_ooc.xdc] for cell 'inst'
 Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc] for cell 'inst'
 Finished Parsing XDC File [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc] for cell 'inst'
@@ -186,13 +186,13 @@ Parsing XDC File [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/gtwizard_ultr
 Finished Parsing XDC File [D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/gtwizard_ultrascale_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1899.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1908.391 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1899.641 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1908.398 ; gain = 0.008
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1899.641 ; gain = 474.668
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1908.398 ; gain = 484.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -200,14 +200,14 @@ Start Loading Part and Timing Information
 Loading part: xczu29dr-ffvf1760-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1899.641 ; gain = 474.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1908.398 ; gain = 484.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/gtwizard_ultrascale_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1899.641 ; gain = 474.668
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1908.398 ; gain = 484.160
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_all_reg' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
 INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_tx_reg' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
@@ -251,7 +251,7 @@ ST_RESET_ALL_TX_PLL_WAIT |                              010 |                   
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_all_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1899.641 ; gain = 474.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1908.398 ; gain = 484.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -291,25 +291,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1899.641 ; gain = 474.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1908.398 ; gain = 484.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 2282.988 ; gain = 858.016
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2284.879 ; gain = 860.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 2313.664 ; gain = 888.691
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2315.629 ; gain = 891.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2315.215 ; gain = 890.242
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2317.477 ; gain = 893.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -327,37 +327,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2319.992 ; gain = 895.020
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2322.270 ; gain = 898.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2319.992 ; gain = 895.020
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2322.270 ; gain = 898.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2319.992 ; gain = 895.020
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2322.270 ; gain = 898.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2319.992 ; gain = 895.020
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2322.270 ; gain = 898.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2319.992 ; gain = 895.020
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2322.270 ; gain = 898.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2319.992 ; gain = 895.020
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2322.270 ; gain = 898.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -388,29 +388,31 @@ Report Cell Usage:
 |13    |FDSE          |     6|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 2319.992 ; gain = 895.020
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2322.270 ; gain = 898.031
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 335 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:03 . Memory (MB): peak = 2319.992 ; gain = 771.020
-Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 2319.992 ; gain = 895.020
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 2322.270 ; gain = 768.691
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2322.270 ; gain = 898.031
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2319.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2322.270 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2375.828 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2377.504 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete, checksum: add9d369
 INFO: [Common 17-83] Releasing license: Synthesis
-58 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+59 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:39 . Memory (MB): peak = 2375.828 ; gain = 1156.309
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 2377.504 ; gain = 1119.277
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/gtwizard_ultrascale_0_synth_1/gtwizard_ultrascale_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP gtwizard_ultrascale_0, cache-ID = 2a77760b85b36f72
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP gtwizard_ultrascale_0, cache-ID = 2ff94e80b0c3df63
 INFO: [Coretcl 2-1174] Renamed 26 cell refs.
 INFO: [Common 17-1381] The checkpoint 'D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/gtwizard_ultrascale_0_synth_1/gtwizard_ultrascale_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file gtwizard_ultrascale_0_utilization_synth.rpt -pb gtwizard_ultrascale_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 19 13:28:39 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  9 15:44:33 2022...

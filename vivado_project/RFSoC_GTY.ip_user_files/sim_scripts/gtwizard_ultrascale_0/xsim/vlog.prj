@@ -1,4 +1,4 @@
-verilog xil_defaultlib  \
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" \
 "../../../../RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_v1_7_gtye4_channel.v" \
 "../../../../RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gtye4_channel_wrapper.v" \
 "../../../../RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_v1_7_gtye4_common.v" \

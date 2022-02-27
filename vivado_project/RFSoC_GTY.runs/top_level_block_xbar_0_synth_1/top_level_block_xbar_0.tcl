@@ -70,6 +70,13 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "top_level_block_xbar_0_synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param power.BramSDPPropagationFix 1
+set_param chipscope.maxJobs 9
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.enableLutRouteBelPower 1
+set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -90,7 +97,7 @@ set_property ip_output_repo d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.cache/ip
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/sources_1/bd/top_level_block/ip/top_level_block_xbar_0/top_level_block_xbar_0.xci
+read_ip -quiet D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/sources_1/bd/top_level_block/ip/top_level_block_xbar_0/top_level_block_xbar_0.xci
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_xbar_0/top_level_block_xbar_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

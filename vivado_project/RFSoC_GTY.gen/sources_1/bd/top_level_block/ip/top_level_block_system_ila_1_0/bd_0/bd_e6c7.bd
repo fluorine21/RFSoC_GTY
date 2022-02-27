@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE445328D6DAC9361",
+      "boundary_crc": "0xE7DD719AAE9CBC52",
       "design_src": "SBD",
       "device": "xczu29dr-ffvf1760-2-e",
       "name": "bd_e6c7",
@@ -50,6 +50,16 @@
         "direction": "I",
         "left": "31",
         "right": "0"
+      },
+      "probe2": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "probe3": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
       }
     },
     "components": {
@@ -87,7 +97,7 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "2"
+            "value": "4"
           },
           "C_PROBE0_MU_CNT": {
             "value": "1"
@@ -105,6 +115,24 @@
             "value": "0"
           },
           "C_PROBE1_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE2_MU_CNT": {
+            "value": "1"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE3_MU_CNT": {
+            "value": "1"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_WIDTH": {
             "value": "32"
           },
           "C_TIME_TAG_WIDTH": {
@@ -139,6 +167,18 @@
         "ports": [
           "probe1",
           "ila_lib/probe1"
+        ]
+      },
+      "probe2_1": {
+        "ports": [
+          "probe2",
+          "ila_lib/probe2"
+        ]
+      },
+      "probe3_1": {
+        "ports": [
+          "probe3",
+          "ila_lib/probe3"
         ]
       }
     }

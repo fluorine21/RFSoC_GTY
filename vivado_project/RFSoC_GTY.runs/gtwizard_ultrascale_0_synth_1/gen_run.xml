@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="gtwizard_ultrascale_0_synth_1" LaunchPart="xczu29dr-ffvf1760-2-e" LaunchTime="1642627592">
+<GenRun Id="gtwizard_ultrascale_0_synth_1" LaunchPart="xczu29dr-ffvf1760-2-e" LaunchTime="1644450199">
   <File Type="PA-TCL" Name="gtwizard_ultrascale_0.tcl"/>
   <File Type="REPORTS-TCL" Name="gtwizard_ultrascale_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="gtwizard_ultrascale_0.vds"/>
@@ -34,6 +34,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top_level.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>

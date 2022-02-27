@@ -27,12 +27,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_b
 # IP: bd/top_level_block/ip/top_level_block_xbar_0/top_level_block_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_xbar_0 || ORIG_REF_NAME==top_level_block_xbar_0} -quiet] -quiet
 
-# IP: bd/top_level_block/ip/top_level_block_auto_ds_0/top_level_block_auto_ds_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_auto_ds_0 || ORIG_REF_NAME==top_level_block_auto_ds_0} -quiet] -quiet
-
-# IP: bd/top_level_block/ip/top_level_block_auto_pc_0/top_level_block_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_auto_pc_0 || ORIG_REF_NAME==top_level_block_auto_pc_0} -quiet] -quiet
-
 # IP: bd/top_level_block/ip/top_level_block_ps8_0_axi_periph_0/top_level_block_ps8_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_ps8_0_axi_periph_0 || ORIG_REF_NAME==top_level_block_ps8_0_axi_periph_0} -quiet] -quiet
 
@@ -45,13 +39,25 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_b
 # IP: bd/top_level_block/ip/top_level_block_proc_sys_reset_0_1/top_level_block_proc_sys_reset_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_proc_sys_reset_0_1 || ORIG_REF_NAME==top_level_block_proc_sys_reset_0_1} -quiet] -quiet
 
-# IP: bd/top_level_block/ip/top_level_block_gty_debug_0_1/top_level_block_gty_debug_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_gty_debug_0_1 || ORIG_REF_NAME==top_level_block_gty_debug_0_1} -quiet] -quiet
-
-# IP: bd/top_level_block/ip/top_level_block_system_ila_0_0/top_level_block_system_ila_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_system_ila_0_0 || ORIG_REF_NAME==top_level_block_system_ila_0_0} -quiet] -quiet
-
 # IP: bd/top_level_block/ip/top_level_block_system_ila_1_0/top_level_block_system_ila_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_system_ila_1_0 || ORIG_REF_NAME==top_level_block_system_ila_1_0} -quiet] -quiet
+
+# IP: bd/top_level_block/ip/top_level_block_gty_debug_0_2/top_level_block_gty_debug_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_gty_debug_0_2 || ORIG_REF_NAME==top_level_block_gty_debug_0_2} -quiet] -quiet
+
+# IP: bd/top_level_block/ip/top_level_block_axi_gpio_0_1/top_level_block_axi_gpio_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_axi_gpio_0_1 || ORIG_REF_NAME==top_level_block_axi_gpio_0_1} -quiet] -quiet
+
+# IP: bd/top_level_block/ip/top_level_block_gty_rst_0_0/top_level_block_gty_rst_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_gty_rst_0_0 || ORIG_REF_NAME==top_level_block_gty_rst_0_0} -quiet] -quiet
+
+# IP: bd/top_level_block/ip/top_level_block_system_ila_0_1/top_level_block_system_ila_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_system_ila_0_1 || ORIG_REF_NAME==top_level_block_system_ila_0_1} -quiet] -quiet
+
+# IP: bd/top_level_block/ip/top_level_block_auto_ds_0/top_level_block_auto_ds_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_auto_ds_0 || ORIG_REF_NAME==top_level_block_auto_ds_0} -quiet] -quiet
+
+# IP: bd/top_level_block/ip/top_level_block_auto_pc_0/top_level_block_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_level_block_auto_pc_0 || ORIG_REF_NAME==top_level_block_auto_pc_0} -quiet] -quiet
 
 # XDC: d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/top_level_block_ooc.xdc

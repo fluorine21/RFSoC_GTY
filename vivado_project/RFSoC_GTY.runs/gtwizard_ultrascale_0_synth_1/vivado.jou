@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Wed Jan 19 13:26:39 2022
-# Process ID: 2820
+# Start of session at: Wed Feb  9 15:43:23 2022
+# Process ID: 29108
 # Current directory: D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/gtwizard_ultrascale_0_synth_1
 # Command line: vivado.exe -log gtwizard_ultrascale_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gtwizard_ultrascale_0.tcl
 # Log file: D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/gtwizard_ultrascale_0_synth_1/gtwizard_ultrascale_0.vds
 # Journal file: D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/gtwizard_ultrascale_0_synth_1\vivado.jou
-# Running On: JAMES-FLOOR4, OS: Windows, CPU Frequency: 2267 MHz, CPU Physical cores: 4, Host memory: 51530 MB
+# Running On: NLO, OS: Windows, CPU Frequency: 2295 MHz, CPU Physical cores: 16, Host memory: 549385 MB
 #-----------------------------------------------------------
 source gtwizard_ultrascale_0.tcl -notrace

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Tue Feb  1 16:54:57 2022
+| Date         : Sat Feb 26 19:43:55 2022
 | Host         : NLO running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -32,11 +32,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*               |    0 |     0 |          0 |    425280 |  0.00 |
-|   LUT as Logic          |    0 |     0 |          0 |    425280 |  0.00 |
+| CLB LUTs*               |   56 |     0 |          0 |    425280 |  0.01 |
+|   LUT as Logic          |   56 |     0 |          0 |    425280 |  0.01 |
 |   LUT as Memory         |    0 |     0 |          0 |    213600 |  0.00 |
-| CLB Registers           |    0 |     0 |          0 |    850560 |  0.00 |
-|   Register as Flip Flop |    0 |     0 |          0 |    850560 |  0.00 |
+| CLB Registers           |    4 |     0 |          0 |    850560 | <0.01 |
+|   Register as Flip Flop |    4 |     0 |          0 |    850560 | <0.01 |
 |   Register as Latch     |    0 |     0 |          0 |    850560 |  0.00 |
 | CARRY8                  |    0 |     0 |          0 |     53160 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |    212640 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
+| 4     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -107,10 +107,10 @@ Table of Contents
 +----------------------+------+-------+------------+-----------+-------+
 |       Site Type      | Used | Fixed | Prohibited | Available | Util% |
 +----------------------+------+-------+------------+-----------+-------+
-| GLOBAL CLOCK BUFFERs |    1 |     0 |          0 |       696 |  0.14 |
+| GLOBAL CLOCK BUFFERs |    2 |     0 |          0 |       696 |  0.29 |
 |   BUFGCE             |    0 |     0 |          0 |       216 |  0.00 |
 |   BUFGCE_DIV         |    0 |     0 |          0 |        32 |  0.00 |
-|   BUFG_GT            |    1 |     0 |          0 |       312 |  0.32 |
+|   BUFG_GT            |    2 |     0 |          0 |       312 |  0.64 |
 |   BUFG_PS            |    0 |     0 |          0 |        72 |  0.00 |
 |   BUFGCTRL*          |    0 |     0 |          0 |        64 |  0.00 |
 | PLL                  |    0 |     0 |          0 |        16 |  0.00 |
@@ -161,11 +161,13 @@ Table of Contents
 +-------------+------+---------------------+
 |   Ref Name  | Used | Functional Category |
 +-------------+------+---------------------+
+| LUT1        |   56 |                 CLB |
 | OBUF        |    8 |                 I/O |
 | INBUF       |    8 |                 I/O |
 | IBUFCTRL    |    8 |              Others |
+| FDCE        |    4 |            Register |
+| BUFG_GT     |    2 |               Clock |
 | IBUFDS_GTE4 |    1 |                 I/O |
-| BUFG_GT     |    1 |               Clock |
 +-------------+------+---------------------+
 
 
@@ -178,15 +180,17 @@ Table of Contents
 | top_level_block_zynq_ultra_ps_e_0_0 |    1 |
 | top_level_block_xbar_0              |    1 |
 | top_level_block_system_ila_1_0      |    1 |
-| top_level_block_system_ila_0_0      |    1 |
+| top_level_block_system_ila_0_1      |    1 |
 | top_level_block_proc_sys_reset_0_1  |    1 |
 | top_level_block_proc_sys_reset_0_0  |    1 |
-| top_level_block_gty_debug_0_1       |    1 |
+| top_level_block_gty_rst_0_0         |    1 |
+| top_level_block_gty_debug_0_2       |    1 |
 | top_level_block_gpio_buffer_o_0_0   |    1 |
 | top_level_block_gpio_buffer_0_0     |    1 |
 | top_level_block_axis_data_fifo_0_1  |    1 |
 | top_level_block_axis_data_fifo_0_0  |    1 |
 | top_level_block_axi_gpio_1_0        |    1 |
+| top_level_block_axi_gpio_0_1        |    1 |
 | top_level_block_axi_gpio_0_0        |    1 |
 | top_level_block_auto_pc_0           |    1 |
 | top_level_block_auto_ds_0           |    1 |

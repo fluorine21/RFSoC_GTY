@@ -14,7 +14,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ed0ebbb1</spirit:value>
+            <spirit:value>9:792a0fab</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -29,11 +29,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 21:21:22 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 09 23:43:12 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1e2535dd</spirit:value>
+            <spirit:value>9:cc9a4da8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -49,11 +49,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 21:21:36 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 09 23:43:15 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1e2535dd</spirit:value>
+            <spirit:value>9:cc9a4da8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -64,7 +64,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1e2535dd</spirit:value>
+            <spirit:value>9:cc9a4da8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -80,11 +80,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 21:21:36 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 09 23:43:15 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1e2535dd</spirit:value>
+            <spirit:value>9:cc9a4da8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -100,11 +100,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 21:21:42 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 09 23:43:17 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ad1693ac</spirit:value>
+            <spirit:value>9:3c7d58b8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -120,11 +120,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 21:21:42 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 09 23:43:17 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ad1693ac</spirit:value>
+            <spirit:value>9:3c7d58b8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -139,11 +139,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 21:21:42 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 09 23:43:17 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1e2535dd</spirit:value>
+            <spirit:value>9:cc9a4da8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -157,11 +157,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jan 19 21:28:39 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 09 23:44:33 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1e2535dd</spirit:value>
+            <spirit:value>9:cc9a4da8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -17840,13 +17840,13 @@
       <spirit:name>RX_REFCLK_SOURCE</spirit:name>
       <spirit:displayName>Receiver reference clock source</spirit:displayName>
       <spirit:description>Select a reference clock input to drive the PLL chosen for receiver operation</spirit:description>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RX_REFCLK_SOURCE" spirit:order="151">X0Y4 clk0+1</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.RX_REFCLK_SOURCE" spirit:order="151"/>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>TX_REFCLK_SOURCE</spirit:name>
       <spirit:displayName>Transmitter reference clock source</spirit:displayName>
       <spirit:description>Select a reference clock input to drive the PLL chosen for transmitter operation</spirit:description>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TX_REFCLK_SOURCE" spirit:order="152">X0Y4 clk0+1</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TX_REFCLK_SOURCE" spirit:order="152"/>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>RX_RECCLK_OUTPUT</spirit:name>
@@ -17947,7 +17947,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>INTERNAL_PORT_ENABLEMENT_UPDATED</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="PARAM_VALUE.INTERNAL_PORT_ENABLEMENT_UPDATED" spirit:order="165">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="PARAM_VALUE.INTERNAL_PORT_ENABLEMENT_UPDATED" spirit:order="165">9</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>

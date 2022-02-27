@@ -56,7 +56,9 @@
 module top_level_block_system_ila_1_0 (
   clk,
   probe0,
-  probe1
+  probe1,
+  probe2,
+  probe3
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN top_level_block_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
@@ -64,10 +66,14 @@ module top_level_block_system_ila_1_0 (
 input wire clk;
 input wire [31 : 0] probe0;
 input wire [31 : 0] probe1;
+input wire [31 : 0] probe2;
+input wire [31 : 0] probe3;
 
   bd_e6c7 inst (
     .clk(clk),
     .probe0(probe0),
-    .probe1(probe1)
+    .probe1(probe1),
+    .probe2(probe2),
+    .probe3(probe3)
   );
 endmodule

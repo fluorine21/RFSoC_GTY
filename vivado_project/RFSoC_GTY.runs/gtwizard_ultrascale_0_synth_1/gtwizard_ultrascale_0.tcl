@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "gtwizard_ultrascale_0_synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -81,6 +83,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.cache/wt [current_project]
 set_property parent.project_path D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:zcu1275:part0:1.0 [current_project]
@@ -88,7 +91,7 @@ set_property ip_output_repo d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.cache/ip
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci
+read_ip -quiet D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc]
 

@@ -27,7 +27,8 @@ reg state;
 always @ (posedge clk or negedge rst) begin
 	if(!rst) begin
 		state <= 0;
-		reg_out <= 0;
+		//reg_out <= 0;
+		reg_out <= {(num_words*word_width){1'b1}};
 	end
 	else begin
 		if(state == 0) begin

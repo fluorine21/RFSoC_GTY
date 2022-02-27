@@ -1,0 +1,322 @@
+
+*** Running vivado
+    with args -log top_level_block_gty_debug_0_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_block_gty_debug_0_2.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source top_level_block_gty_debug_0_2.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top top_level_block_gty_debug_0_2 -part xczu29dr-ffvf1760-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu29dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu29dr'
+INFO: [Common 17-86] Your Synthesis license expires in 3 day(s)
+INFO: [Device 21-403] Loading part xczu29dr-ffvf1760-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1066928
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1684.781 ; gain = 262.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level_block_gty_debug_0_2' [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_gty_debug_0_2/synth/top_level_block_gty_debug_0_2.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gty_debug' [D:/repos/RFSoC_GTY/verilog_source/rtl/gty_debug.v:3]
+INFO: [Synth 8-6157] synthesizing module 'config_reg' [D:/repos/RFSoC_GTY/verilog_source/rtl/config_reg.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'config_reg' (1#1) [D:/repos/RFSoC_GTY/verilog_source/rtl/config_reg.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'config_reg__parameterized0' [D:/repos/RFSoC_GTY/verilog_source/rtl/config_reg.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'config_reg__parameterized0' (1#1) [D:/repos/RFSoC_GTY/verilog_source/rtl/config_reg.sv:5]
+WARNING: [Synth 8-689] width (1) of port connection 'reg_out' does not match port width (80) of module 'config_reg__parameterized0' [D:/repos/RFSoC_GTY/verilog_source/rtl/gty_debug.v:48]
+WARNING: [Synth 8-3848] Net gty_tx_data_out in module/entity gty_debug does not have driver. [D:/repos/RFSoC_GTY/verilog_source/rtl/gty_debug.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'gty_debug' (2#1) [D:/repos/RFSoC_GTY/verilog_source/rtl/gty_debug.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_level_block_gty_debug_0_2' (3#1) [d:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.gen/sources_1/bd/top_level_block/ip/top_level_block_gty_debug_0_2/synth/top_level_block_gty_debug_0_2.v:58]
+WARNING: [Synth 8-7129] Port gpio_in[31] in module config_reg__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[30] in module config_reg__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[29] in module config_reg__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[28] in module config_reg__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[27] in module config_reg__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[26] in module config_reg__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[25] in module config_reg__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[31] in module config_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[30] in module config_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[29] in module config_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[28] in module config_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[27] in module config_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[26] in module config_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_in[25] in module config_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[79] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[78] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[77] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[76] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[75] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[74] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[73] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[72] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[71] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[70] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[69] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[68] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[67] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[66] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[65] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[64] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[63] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[62] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[61] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[60] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[59] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[58] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[57] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[56] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[55] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[54] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[53] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[52] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[51] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[50] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[49] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[48] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[47] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[46] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[45] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[44] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[43] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[42] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[41] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[40] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[39] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[38] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[37] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[36] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[35] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[34] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[33] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[32] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[31] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[30] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[29] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[28] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[27] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[26] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[25] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[24] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[23] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[22] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[21] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[20] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[19] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[18] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[17] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[16] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[15] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[14] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[13] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[12] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[11] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[10] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[9] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[8] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[7] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[6] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[5] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[4] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[3] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[2] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[1] in module gty_debug is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[0] in module gty_debug is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1734.695 ; gain = 312.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1752.551 ; gain = 330.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1752.551 ; gain = 330.711
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1752.551 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1870.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1890.320 ; gain = 19.879
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1890.320 ; gain = 468.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu29dr-ffvf1760-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1890.320 ; gain = 468.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1890.320 ; gain = 468.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1890.320 ; gain = 468.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port gty_tx_data_out[79] in module top_level_block_gty_debug_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[78] in module top_level_block_gty_debug_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[77] in module top_level_block_gty_debug_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[76] in module top_level_block_gty_debug_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[75] in module top_level_block_gty_debug_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gty_tx_data_out[74] in module top_level_block_gty_debug_0_2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1890.320 ; gain = 468.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2257.754 ; gain = 835.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2257.754 ; gain = 835.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2276.816 ; gain = 854.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2282.594 ; gain = 860.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2282.594 ; gain = 860.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2282.594 ; gain = 860.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2282.594 ; gain = 860.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2282.594 ; gain = 860.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2282.594 ; gain = 860.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT4 |     4|
+|3     |LUT6 |     2|
+|4     |FDCE |     1|
+|5     |FDPE |    32|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2282.594 ; gain = 860.754
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 88 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2282.594 ; gain = 722.984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2282.594 ; gain = 860.754
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2294.656 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2342.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 31b6ae11
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2342.527 ; gain = 1072.363
+INFO: [Common 17-1381] The checkpoint 'D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/top_level_block_gty_debug_0_2_synth_1/top_level_block_gty_debug_0_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_level_block_gty_debug_0_2, cache-ID = cacb372de8d49910
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/repos/RFSoC_GTY/vivado_project/RFSoC_GTY.runs/top_level_block_gty_debug_0_2_synth_1/top_level_block_gty_debug_0_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_block_gty_debug_0_2_utilization_synth.rpt -pb top_level_block_gty_debug_0_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 26 19:42:34 2022...

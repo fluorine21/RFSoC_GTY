@@ -1,0 +1,327 @@
+
+*** Running vivado
+    with args -log gtwizard_ultrascale_0_example_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gtwizard_ultrascale_0_example_top.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source gtwizard_ultrascale_0_example_top.tcl -notrace
+Command: synth_design -top gtwizard_ultrascale_0_example_top -part xczu29dr-ffvf1760-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu29dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu29dr'
+INFO: [Common 17-86] Your Synthesis license expires in 16 day(s)
+INFO: [Device 21-403] Loading part xczu29dr-ffvf1760-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 324764
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1694.816 ; gain = 263.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_top' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.v:58]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:55204]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:55204]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:55396]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (3#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:55396]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_stimulus_raw' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_stimulus_raw.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_reset_synchronizer' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_reset_sync.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_reset_synchronizer' (4#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_reset_sync.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_prbs_any' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_prbs_any.v:136]
+	Parameter CHK_MODE bound to: 0 - type: integer 
+	Parameter INV_PATTERN bound to: 1 - type: integer 
+	Parameter POLY_LENGHT bound to: 31 - type: integer 
+	Parameter POLY_TAP bound to: 28 - type: integer 
+	Parameter NBITS bound to: 80 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_prbs_any' (5#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_prbs_any.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_stimulus_raw' (6#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_stimulus_raw.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_checking_raw' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_checking_raw.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_prbs_any__parameterized0' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_prbs_any.v:136]
+	Parameter CHK_MODE bound to: 1 - type: integer 
+	Parameter INV_PATTERN bound to: 1 - type: integer 
+	Parameter POLY_LENGHT bound to: 31 - type: integer 
+	Parameter POLY_TAP bound to: 28 - type: integer 
+	Parameter NBITS bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_prbs_any__parameterized0' (6#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_prbs_any.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_checking_raw' (7#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_checking_raw.v:58]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.v:368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.v:383]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_bit_synchronizer' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_bit_sync.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_bit_synchronizer' (8#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_bit_sync.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_init' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_init.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_init' (9#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_init.v:59]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_vio_0' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/synth_1/.Xil/Vivado-332904-NLO/realtime/gtwizard_ultrascale_0_vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_vio_0' (10#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/synth_1/.Xil/Vivado-332904-NLO/realtime/gtwizard_ultrascale_0_vio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_wrapper' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_wrapper.v:57]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_gtwiz_userclk_tx' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v:60]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:1259]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (11#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp_diablo.v:1259]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_gtwiz_userclk_tx' (12#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v:60]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_gtwiz_userclk_rx' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_gtwiz_userclk_rx' (13#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v:60]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0' [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/synth_1/.Xil/Vivado-332904-NLO/realtime/gtwizard_ultrascale_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0' (14#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/synth_1/.Xil/Vivado-332904-NLO/realtime/gtwizard_ultrascale_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_wrapper' (15#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_wrapper.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_ultrascale_0_vio_0_inst'. This will prevent further optimization [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.v:526]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'example_init_inst'. This will prevent further optimization [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.v:452]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_top' (16#1) [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1745.234 ; gain = 313.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1763.102 ; gain = 331.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1763.102 ; gain = 331.563
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1775.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc] for cell 'example_wrapper_inst/gtwizard_ultrascale_0_inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1889.285 ; gain = 0.004
+Finished Parsing XDC File [d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc] for cell 'example_wrapper_inst/gtwizard_ultrascale_0_inst'
+Parsing XDC File [d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0_in_context.xdc] for cell 'gtwizard_ultrascale_0_vio_0_inst'
+Finished Parsing XDC File [d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0_in_context.xdc] for cell 'gtwizard_ultrascale_0_vio_0_inst'
+Parsing XDC File [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.xdc]
+Finished Parsing XDC File [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gtwizard_ultrascale_0_example_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gtwizard_ultrascale_0_example_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1889.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1889.285 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'gtwizard_ultrascale_0_vio_0_inst' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1896.453 ; gain = 464.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu29dr-ffvf1760-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1896.453 ; gain = 464.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ch0_gtyrxn_in. (constraint file  d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ch0_gtyrxn_in. (constraint file  d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ch0_gtyrxp_in. (constraint file  d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ch0_gtyrxp_in. (constraint file  d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for ch0_gtytxn_out. (constraint file  d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ch0_gtytxn_out. (constraint file  d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for ch0_gtytxp_out. (constraint file  d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ch0_gtytxp_out. (constraint file  d:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0/gtwizard_ultrascale_0_in_context.xdc, line 12).
+Applied set_property KEEP_HIERARCHY = SOFT for example_wrapper_inst/gtwizard_ultrascale_0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gtwizard_ultrascale_0_vio_0_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1896.453 ; gain = 464.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sm_init_reg' in module 'gtwizard_ultrascale_0_example_init'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_START |                               00 |                               00
+              ST_TX_WAIT |                               01 |                               01
+              ST_RX_WAIT |                               10 |                               10
+              ST_MONITOR |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_init_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_0_example_init'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1896.453 ; gain = 464.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 160   
+	   3 Input      1 Bit         XORs := 64    
++---Registers : 
+	               80 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               31 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 80    
++---Muxes : 
+	   3 Input    7 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 11    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1896.453 ; gain = 464.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2268.293 ; gain = 836.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2288.840 ; gain = 857.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2289.352 ; gain = 857.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2296.133 ; gain = 864.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2296.133 ; gain = 864.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2296.133 ; gain = 864.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2296.133 ; gain = 864.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2296.133 ; gain = 864.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2296.133 ; gain = 864.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |gtwizard_ultrascale_0_vio_0 |         1|
+|2     |gtwizard_ultrascale_0       |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |gtwizard_ultrascale       |     1|
+|2     |gtwizard_ultrascale_0_vio |     1|
+|3     |BUFG                      |     1|
+|4     |BUFG_GT                   |     2|
+|5     |CARRY8                    |     5|
+|6     |IBUFDS_GTE4               |     1|
+|7     |LUT1                      |    36|
+|8     |LUT2                      |    33|
+|9     |LUT3                      |   109|
+|10    |LUT4                      |    54|
+|11    |LUT5                      |    10|
+|12    |LUT6                      |    29|
+|13    |FDCE                      |     4|
+|14    |FDPE                      |    20|
+|15    |FDRE                      |    91|
+|16    |FDSE                      |   209|
+|17    |IBUF                      |     3|
+|18    |OBUF                      |     2|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2296.133 ; gain = 864.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2296.133 ; gain = 731.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2296.133 ; gain = 864.594
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2296.133 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2353.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 3 instances
+
+Synth Design complete, checksum: 45ac11a6
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2353.512 ; gain = 1095.676
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'D:/repos/RFSoC_GTY/gtwizard_ultrascale_0_ex/gtwizard_ultrascale_0_ex.runs/synth_1/gtwizard_ultrascale_0_example_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gtwizard_ultrascale_0_example_top_utilization_synth.rpt -pb gtwizard_ultrascale_0_example_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 13 13:15:52 2022...
